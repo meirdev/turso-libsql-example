@@ -9,6 +9,8 @@ const TURSO_AUTH_TOKEN = process.env.TURSO_AUTH_TOKEN;
 const client = createClient({
   url: TURSO_URL,
   authToken: TURSO_AUTH_TOKEN,
+  // url: "http://localhost:8080",
+  // tls: false
 });
 
 export const init = async () => {
